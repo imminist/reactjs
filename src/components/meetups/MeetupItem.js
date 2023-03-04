@@ -1,4 +1,4 @@
-import Card from '../ui/Card.js'
+import Card from '../ui/Card'
 import classes from './MeetupItem.module.css'
 
 function MeetupItem(props) {
@@ -13,8 +13,8 @@ function MeetupItem(props) {
           <address>{props.address}</address>
           <p>{props.description}</p>
         </div>
-        <div>
-          <button className={classes.actions}>To Favorites</button>
+        <div className={classes.actions}>
+          <button>To Favorites</button>
         </div>
       </Card>
     </li>
